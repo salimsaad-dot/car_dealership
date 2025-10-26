@@ -697,5 +697,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
     console.log('AutoElite Cars Page initialized 🚗✨');
-
 });
