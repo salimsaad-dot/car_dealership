@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 5200,
             fuel: "Electric",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Autopilot", "Ludicrous+", "Premium Sound", "Glass Roof"],
             description: "The ultimate electric performance sedan with unprecedented acceleration and range."
         },
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 8100,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["M Sport Package", "Carbon Roof", "Competition Pack", "Premium"],
             description: "High-performance coupe with aggressive styling and track-ready capabilities."
         },
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 12400,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["AMG Package", "4x4", "Premium+", "Night Package"],
             description: "Luxury SUV with brute power and sophisticated technology."
         },
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 3500,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["RS Package", "Sport Exhaust", "Premium", "Driver Assist"],
             description: "Executive sports hatch with stunning design and explosive performance."
         },
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 2800,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Turbo Package", "Sport Chrono", "Premium", "Carbon"],
             description: "Iconic sports car with breathtaking acceleration and precision handling."
         },
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 6200,
             fuel: "Diesel",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["HSE Pack", "4x4", "Premium Sound", "Air Suspension"],
             description: "Luxury SUV combining off-road capability with premium comfort."
         },
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 4500,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["GR Package", "Sport Mode", "Premium", "Track Ready"],
             description: "Modern sports legend with exceptional handling and performance."
         },
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 8900,
             fuel: "Petrol",
             transmission: "Manual",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["GT Package", "Performance Exhaust", "Premium", "Sport"],
             description: "American muscle with raw power and iconic styling."
         },
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 3200,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Nismo Package", "Track Edition", "Premium", "AWD"],
             description: "Supercar slayer with incredible performance and technology."
         },
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 2800,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Luxury Package", "Sport+", "Premium", "Mark Levinson"],
             description: "Grand tourer with stunning design and exceptional comfort."
         },
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 5100,
             fuel: "Petrol",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Z51 Package", "Performance", "Premium", "Sport"],
             description: "Mid-engine American sports car with supercar performance."
         },
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mileage: 3200,
             fuel: "Electric",
             transmission: "Automatic",
-            image: "images/car.jpg",
+            image: "images/Car.jpg",
             features: ["Ultimate Pack", "Fast Charging", "Premium", "Tech"],
             description: "Futuristic electric crossover with rapid charging and advanced features."
         }
@@ -697,4 +697,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
     console.log('AutoElite Cars Page initialized 🚗✨');
+
 });
