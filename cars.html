@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Inventory | Auto Elite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="text-decoration: none; color: inherit;">Auto<span class="gradient-text">Elite</span></a></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cars.html" class="nav-link active">Cars</a>
+                <a href="index.html#about" class="nav-link">About</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <!-- In the navbar section of cars.html -->
+<div class="nav-cta">
+    <a href="#contact" class="btn btn-neon">Get Quote</a>
+</div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cars Page Hero -->
+    <section class="cars-hero">
+        <div class="container">
+            <div class="cars-hero-content glass">
+                <h1 class="cars-hero-title">Explore Our <span class="gradient-text">Collection</span></h1>
+                <p class="cars-hero-subtitle">Discover your perfect match from our curated selection of premium vehicles</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3 id="total-cars">50+</h3>
+                        <p>Vehicles Available</p>
+                    </div>
+                    <div class="stat">
+                        <h3>25+</h3>
+                        <p>Brands</p>
+                    </div>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Verified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="cars-main">
+        <div class="container">
+            <div class="cars-layout">
+                <!-- Filter Sidebar -->
+                <aside class="filter-sidebar glass">
+                    <div class="filter-header">
+                        <h3>Filters</h3>
+                        <button class="btn btn-text" id="clear-filters">Clear All</button>
+                    </div>
+
+                    <!-- Search -->
+                    <div class="filter-group">
+                        <label for="search">Search Vehicles</label>
+                        <div class="search-box">
+                            <input type="text" id="search" placeholder="Search brand, model...">
+                            <span class="search-icon">🔍</span>
+                        </div>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-group">
+                        <label for="price-range">Price Range</label>
+                        <div class="range-inputs">
+                            <input type="number" id="min-price" placeholder="Min" min="0">
+                            <span>-</span>
+                            <input type="number" id="max-price" placeholder="Max" min="0">
+                        </div>
+                        <div class="range-slider">
+                            <input type="range" id="price-range" min="0" max="200000" value="200000">
+                            <div class="range-values">
+                                <span>$0</span>
+                                <span>$200k+</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Brand Filter -->
+                    <div class="filter-group">
+                        <label>Brand</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" value="BMW">
+                                <span class="checkmark"></span>
+                                BMW
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Mercedes">
+                                <span class="checkmark"></span>
+                                Mercedes
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Audi">
+                                <span class="checkmark"></span>
+                                Audi
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Tesla">
+                                <span class="checkmark"></span>
+                                Tesla
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Porsche">
+                                <span class="checkmark"></span>
+                                Porsche
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Year Filter -->
+                    <div class="filter-group">
+                        <label for="year-range">Year</label>
+                        <div class="range-inputs">
+                            <input type="number" id="min-year" placeholder="2015" min="2000" max="2024">
+                            <span>-</span>
+                            <input type="number" id="max-year" placeholder="2024" min="2000" max="2024">
+                        </div>
+                    </div>
+
+                    <!-- Fuel Type -->
+                    <div class="filter-group">
+                        <label>Fuel Type</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" value="Petrol">
+                                <span class="checkmark"></span>
+                                Petrol
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Diesel">
+                                <span class="checkmark"></span>
+                                Diesel
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Electric">
+                                <span class="checkmark"></span>
+                                Electric
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Hybrid">
+                                <span class="checkmark"></span>
+                                Hybrid
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Transmission -->
+                    <div class="filter-group">
+                        <label>Transmission</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" value="Automatic">
+                                <span class="checkmark"></span>
+                                Automatic
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" value="Manual">
+                                <span class="checkmark"></span>
+                                Manual
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-neon btn-full" id="apply-filters">Apply Filters</button>
+                </aside>
+
+                <!-- Main Content Area -->
+                <main class="cars-content">
+                    <!-- Toolbar -->
+                    <div class="cars-toolbar glass">
+                        <div class="results-info">
+                            <span id="results-count">24</span> vehicles found
+                        </div>
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by">
+                                <option value="featured">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="year-new">Year: Newest First</option>
+                                <option value="year-old">Year: Oldest First</option>
+                                <option value="mileage">Mileage: Low to High</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Active Filters -->
+                    <div class="active-filters" id="active-filters">
+                        <!-- Filters will appear here dynamically -->
+                    </div>
+
+                    <!-- Cars Grid -->
+                    <div class="cars-grid expanded" id="cars-grid">
+                        <!-- Cars will be loaded here dynamically -->
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more">
+                        <button class="btn btn-glass" id="load-more">Load More Vehicles</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Car Detail Modal -->
+    <div id="car-modal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Car details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+        <!-- Contact Section for Cars Page -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Your <span class="gradient-text">Quote</span></h2>
+                <p class="section-subtitle">Interested in a vehicle? Get pricing and availability instantly!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card glass">
+                        <h3>Quick Quote Options</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    💬
+                                </div>
+                                <div class="method-details">
+                                    <h4>Instant WhatsApp Quote</h4>
+                                    <p>Send us car details for immediate pricing</p>
+                                    <a href="https://wa.me/15551234567" class="whatsapp-link" target="_blank">
+                                        💬 Get Instant Quote
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    📞
+                                </div>
+                                <div class="method-details">
+                                    <h4>Call for Pricing</h4>
+                                    <p>Speak directly with our sales team</p>
+                                    <a href="tel:+15551234567" class="whatsapp-link">
+                                        📞 Call Now: +1 (555) 123-4567
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    🚗
+                                </div>
+                                <div class="method-details">
+                                    <h4>Schedule Test Drive</h4>
+                                    <p>Experience the vehicle firsthand</p>
+                                    <a href="https://wa.me/15551234567?text=Hi! I'd like to schedule a test drive" class="whatsapp-link" target="_blank">
+                                        🚗 Book Test Drive
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    💰
+                                </div>
+                                <div class="method-details">
+                                    <h4>Financing Options</h4>
+                                    <p>Check loan eligibility and rates</p>
+                                    <a href="https://wa.me/15551234567?text=Hi! I'm interested in financing options" class="whatsapp-link" target="_blank">
+                                        💰 Check Financing
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glass">
+                    <h3>Request Detailed Quote</h3>
+                    <form class="contact-form" id="cars-quote-form">
+                        <div class="form-group">
+                            <input type="text" id="quote-name" required>
+                            <label for="quote-name">Full Name</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="quote-email" required>
+                            <label for="quote-email">Email Address</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="quote-phone" required>
+                            <label for="quote-phone">Phone Number</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="quote-vehicle" required>
+                                <option value=""></option>
+                                <option value="tesla-model-s">Tesla Model S Plaid</option>
+                                <option value="bmw-m4">BMW M4 Competition</option>
+                                <option value="mercedes-g63">Mercedes G 63 AMG</option>
+                                <option value="audi-rs7">Audi RS7 Sportback</option>
+                                <option value="porsche-911">Porsche 911 Turbo S</option>
+                                <option value="range-rover">Range Rover Sport</option>
+                                <option value="toyota-supra">Toyota Supra GR</option>
+                                <option value="ford-mustang">Ford Mustang GT</option>
+                                <option value="nissan-gtr">Nissan GT-R Nismo</option>
+                                <option value="lexus-lc500">Lexus LC 500</option>
+                                <option value="chevrolet-corvette">Chevrolet Corvette Stingray</option>
+                                <option value="hyundai-ioniq5">Hyundai Ioniq 5</option>
+                                <option value="other">Other Vehicle</option>
+                            </select>
+                            <label for="quote-vehicle">Vehicle of Interest</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <textarea id="quote-message" rows="4" placeholder=" "></textarea>
+                            <label for="quote-message">Specific Questions or Requirements</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-neon btn-full">
+                            <span>Get Detailed Quote</span>
+                            <i class="arrow">→</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Auto<span class="gradient-text">Elite</span></h3>
+                    <p>Redefining automotive excellence through innovation, technology, and unparalleled customer experiences.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="index.html">Home</a>
+                        <a href="cars.html">All Vehicles</a>
+                        <a href="index.html#featured-cars">Featured Cars</a>
+                        <a href="index.html#about">About Us</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <a href="#">Virtual Tours</a>
+                        <a href="#">Financing</a>
+                        <a href="#">Trade-In</a>
+                        <a href="#">Delivery</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="index.html#contact">Contact Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Contact</h4>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        <a href="mailto:hello@autoelite.com">hello@autoelite.com</a>
+                        <a href="#">123 Future Avenue</a>
+                        <a href="#">Tech District, TD 12345</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-newsletter">
+                    <div class="newsletter-text">
+                        <h4>Stay Updated</h4>
+                        <p>Get the latest on new arrivals and exclusive offers</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn btn-neon">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>&copy; 2024 AutoElite. All rights reserved. | Crafted with ❤️ for automotive excellence by Salim Saad</p>
+                    <div class="footer-badges">
+                        <span>🔒 Secure Transactions</span>
+                        <span>⭐ Premium Certified</span>
+                        <span>🚀 Future Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <span>💬</span>
+        <span class="whatsapp-text">Chat with us</span>
+    </a>
+
+    <script src="js/animations.js"></script>
+    <script src="js/cars.js"></script>
+</body>
+</html>

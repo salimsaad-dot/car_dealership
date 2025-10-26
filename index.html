@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McMoney | Premium Cars</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Animated Background Elements -->
+    <div class="bg-elements">
+        <div class="floating-circle circle-1"></div>
+        <div class="floating-circle circle-2"></div>
+        <div class="floating-circle circle-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mc<span class="gradient-text">Money</span></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cars.html" class="nav-link">Cars</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-neon">Get Quote</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="images/Car.jpg" alt="Luxury Car" class="hero-car-image">
+        </div>
+        <div class="container">
+            <div class="hero-content glass">
+                <h1 class="hero-title">McMoney Cars - Automotive Excellence</h1>
+                <p class="hero-subtitle">Find your perfect ride — inspected, trusted, ready today..</p>
+                <div class="hero-buttons">
+                    <a href="#featured-cars" class="btn btn-neon btn-pulse">
+                        <span>Explore Inventory</span>
+                    </a>
+                    <a href="#contact" class="btn btn-glass">
+                        <span>Virtual Tour</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <h3>200+</h3>
+                        <p>Premium Cars</p>
+                    </div>
+                    <div class="stat">
+                        <h3>98%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section id="featured-cars" class="featured-cars">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="gradient-text">Vehicles</span></h2>
+                <p class="section-subtitle">Curated selection of premium pre-owned automobiles</p>
+            </div>
+            
+            <div class="cars-grid">
+                <!-- Car Card 1 -->
+                <div class="car-card glass">
+                    <div class="car-image">
+                        <div class="image-container">
+                            <img src="images/Car.jpg" alt="Tesla Model S">
+                        </div>
+                        <div class="car-badge neon-badge">Premium</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Tesla Model S Plaid</h3>
+                        <div class="car-specs">
+                            <span><i class="icon">⚡</i> 2022</span>
+                            <span><i class="icon">📊</i> 5,200 mi</span>
+                            <span><i class="icon">🔋</i> Electric</span>
+                        </div>
+                        <div class="car-features">
+                            <span>Autopilot</span>
+                            <span>Ludicrous+</span>
+                            <span>Premium</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$89,999</span>
+                            <span class="price-note">Financing Available</span>
+                        </div>
+                        <button class="btn btn-glass btn-full">Virtual Tour</button>
+                    </div>
+                </div>
+
+                <!-- Car Card 2 -->
+                <div class="car-card glass">
+                    <div class="car-image">
+                        <div class="image-container">
+                            <img src="images/car.jpg" alt="BMW M4 Competition">
+                        </div>
+                        <div class="car-badge neon-badge">Sport</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>BMW M4 Competition</h3>
+                        <div class="car-specs">
+                            <span><i class="icon">⚡</i> 2023</span>
+                            <span><i class="icon">📊</i> 8,100 mi</span>
+                            <span><i class="icon">⛽</i> Petrol</span>
+                        </div>
+                        <div class="car-features">
+                            <span>503 HP</span>
+                            <span>Carbon</span>
+                            <span>M Package</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$76,500</span>
+                            <span class="price-note">Lease Available</span>
+                        </div>
+                        <button class="btn btn-glass btn-full">Virtual Tour</button>
+                    </div>
+                </div>
+
+                <!-- Car Card 3 -->
+                <div class="car-card glass">
+                    <div class="car-image">
+                        <div class="image-container">
+                            <img src="images/car.jpg" alt="Mercedes G-Class">
+                        </div>
+                        <div class="car-badge neon-badge">Luxury</div>
+                    </div>
+                    <div class="car-info">
+                        <h3>Mercedes G 63 AMG</h3>
+                        <div class="car-specs">
+                            <span><i class="icon">⚡</i> 2021</span>
+                            <span><i class="icon">📊</i> 12,400 mi</span>
+                            <span><i class="icon">⛽</i> Petrol</span>
+                        </div>
+                        <div class="car-features">
+                            <span>4x4</span>
+                            <span>AMG Pack</span>
+                            <span>Premium+</span>
+                        </div>
+                        <div class="car-price">
+                            <span class="price">$124,999</span>
+                            <span class="price-note">Customizable</span>
+                        </div>
+                        <button class="btn btn-glass btn-full">Virtual Tour</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-more">
+                <a href="cars.html" class="btn btn-neon">
+                    <span>Explore Full Collection</span>
+                    <i class="arrow">→</i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose <span class="gradient-text">AutoElite</span></h2>
+                <p class="section-subtitle">Redefining the car buying experience with innovation and excellence</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="mission-statement glass">
+                        <h3>Our Mission</h3>
+                        <p>To transform the automotive marketplace by providing cutting-edge technology, transparent processes, and unparalleled customer experiences in the pre-owned luxury vehicle sector.</p>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-card glass">
+                            <div class="feature-icon">
+                                <div class="icon-wrapper">
+                                    🔍
+                                </div>
+                            </div>
+                            <h4>Advanced Inspection</h4>
+                            <p>Every vehicle undergoes 200-point inspection using state-of-the-art diagnostic technology</p>
+                        </div>
+
+                        <div class="feature-card glass">
+                            <div class="feature-icon">
+                                <div class="icon-wrapper">
+                                    🤖
+                                </div>
+                            </div>
+                            <h4>AI-Powered Matching</h4>
+                            <p>Our intelligent system matches you with perfect vehicles based on your preferences</p>
+                        </div>
+
+                        <div class="feature-card glass">
+                            <div class="feature-icon">
+                                <div class="icon-wrapper">
+                                    🚀
+                                </div>
+                            </div>
+                            <h4>Digital Experience</h4>
+                            <p>Virtual tours, augmented reality previews, and seamless online purchasing</p>
+                        </div>
+
+                        <div class="feature-card glass">
+                            <div class="feature-icon">
+                                <div class="icon-wrapper">
+                                    ⚡
+                                </div>
+                            </div>
+                            <h4>Instant Financing</h4>
+                            <p>Get approved in minutes with our AI-driven financing platform</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual">
+                    <div class="visual-card glass">
+                        <div class="stats-showcase">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="500">0</div>
+                                <div class="stat-label">Vehicles Sold</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="99">0</div>
+                                <div class="stat-label">Satisfaction Rate</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="24">0</div>
+                                <div class="stat-label">Support Hours</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Brand Partners</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Ready to experience the future of car buying? Let's connect</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card glass">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    📞
+                                </div>
+                                <div class="method-details">
+                                    <h4>Phone & WhatsApp</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                    <a href="https://wa.me/15551234567" class="whatsapp-link">
+                                        💬 Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    📍
+                                </div>
+                                <div class="method-details">
+                                    <h4>Visit Our Showroom</h4>
+                                    <p>123 Future Avenue</p>
+                                    <p>Tech District, TD 12345</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    🕒
+                                </div>
+                                <div class="method-details">
+                                    <h4>Business Hours</h4>
+                                    <p>Monday - Saturday: 9AM - 9PM</p>
+                                    <p>Sunday: 10AM - 6PM</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    ✉️
+                                </div>
+                                <div class="method-details">
+                                    <h4>Email Us</h4>
+                                    <p>hello@autoelite.com</p>
+                                    <p>support@autoelite.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links glass">
+                        <h4>Follow Our Journey</h4>
+                        <div class="social-grid">
+                            <a href="#" class="social-link">
+                                <span>📘 Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span>📷 Instagram</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span>🐦 Twitter</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <span>💼 LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container glass">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Full Name</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone">
+                            <label for="phone">Phone Number</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <select id="interest" required>
+                                <option value=""></option>
+                                <option value="test-drive">Schedule Test Drive</option>
+                                <option value="finance">Financing Inquiry</option>
+                                <option value="trade-in">Trade-In Valuation</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <label for="interest">I'm interested in</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <textarea id="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="underline"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-neon btn-full">
+                            <span>Send Message</span>
+                            <i class="arrow">→</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Auto<span class="gradient-text">Elite</span></h3>
+                    <p>Redefining automotive excellence through innovation, technology, and unparalleled customer experiences.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📷</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Explore</h4>
+                        <a href="index.html">Home</a>
+                        <a href="cars.html">All Vehicles</a>
+                        <a href="#featured-cars">Featured Cars</a>
+                        <a href="#about">About Us</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <a href="#">Virtual Tours</a>
+                        <a href="#">Financing</a>
+                        <a href="#">Trade-In</a>
+                        <a href="#">Delivery</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="#">Contact Us</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+
+                    <div class="link-group">
+                        <h4>Contact</h4>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                        <a href="mailto:hello@autoelite.com">hello@autoelite.com</a>
+                        <a href="#">123 Future Avenue</a>
+                        <a href="#">Tech District, TD 12345</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-newsletter">
+                    <div class="newsletter-text">
+                        <h4>Stay Updated</h4>
+                        <p>Get the latest on new arrivals and exclusive offers</p>
+                    </div>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn btn-neon">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="footer-copyright">
+                    <p>&copy; 2024 AutoElite. All rights reserved. | Crafted with ❤️ for automotive excellence by Salim Saad</p>
+                    <div class="footer-badges">
+                        <span>🔒 Secure Transactions</span>
+                        <span>⭐ Premium Certified</span>
+                        <span>🚀 Future Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/15551234567" class="whatsapp-float" target="_blank">
+        <span>💬</span>
+        <span class="whatsapp-text">Chat with us</span>
+    </a>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
